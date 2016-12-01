@@ -1,0 +1,106 @@
+.container2 {
+	width: 500px;
+    height: 600px;
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;	
+	margin: auto;	
+	font-family: Calibri;
+}
+
+/* Registration title: SaleProject */
+#register_title {
+	font-size: 40px;
+	font-weight: bold;
+	margin-top: 20px;
+	margin-bottom: 40px;
+	overflow: hidden;
+}
+
+#register_title #title_sale {
+	width: 240px;
+	color: #980000;
+	float: left;
+	text-align: right;
+} 
+
+#register_title #title_project {
+	width: 260px;
+	color: #6699ff;
+	text-align: left;
+	overflow: hidden;
+} 
+
+/* Registration header: Please register and horizontal line */
+#register_head {
+	font-size: 26px;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+
+/* registration body: Full name, Username, Email, etc */
+#register_body {
+	margin-bottom: 25px;
+}
+
+/* Form element and its corresponding text: Full Name and input text and also form submit button */
+.register_body_form_elements {
+	margin-bottom: 18px;
+}
+
+.register_body_form_button {
+	height: 28px;
+	margin-top: 30px;
+	position: relative;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+/* Form text description: Full Name, Email, Password, etc */
+#register_body .register_body_form_elements .element_desc {
+	font-size: 14px;
+}
+
+/* Form text and button element */
+#register_fullname, #register_username, #register_email, #register_password,
+#register_confpassword, #register_postalcode, #register_phonenumber {
+	width: 500px;
+	height: 25px;
+}
+
+#register_fulladdress {
+	resize: none;
+	font-size: 13px;
+	font-family: tahoma;
+	width: 500px;
+	height: 50px;
+}
+
+/* Registration footer: Already registered? Login here */
+#register_footer {
+	overflow: hidden;
+	margin-bottom: 50px;
+	font-family : Sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+}
+#register_footer #footer_question {
+	float: left;
+}
+#register_footer #footer_here {
+	color: #6699ff;
+}
+#register_footer #footer_href {
+	text-decoration: none;
+	color: inherit;
+}
+
+/* Validation error respone */
+#register_fullname_error, #register_username_error, #register_email_error,
+#register_password_error, #register_confpassword_error, #register_fulladdress_error,
+#register_postalcode_error, #register_phonenumber_error {
+	font-size: 14px;
+	color: #FF0000;
+}

@@ -1,0 +1,89 @@
+.container2{
+	width: 500px;
+    height: 600px;
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	font-family: Calibri;
+}
+
+#login_title {
+	font-size: 40px;
+	font-weight: bold;
+	margin-bottom: 40px;
+	margin-top: 20px;
+	overflow: hidden;
+
+}
+
+#login_title #login_title_sale {
+	width: 240px;
+	color: #980000;
+	float: left;
+	text-align: right;
+}
+
+#login_title #login_title_project {
+	width: 260px;
+	color: #6699ff;
+	text-align: left;
+	overflow: hidden;
+}
+
+#login_header {
+	font-size: 26px;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+#login_body {
+	margin-bottom: 25px;
+}
+.login_body_form_elements {
+	margin-bottom: 18px;
+	font-size: 14px;
+}
+
+#login_email, #login_password {
+	width: 500px;
+	height: 25px;
+}
+
+.login_body_form_button {
+	height: 28px;
+	margin-top: 30px;
+	position: relative;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+#login_footer {
+	overflow: hidden;
+	margin-bottom: 50px;
+	font-family : Sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+}
+#login_footer #footer_question {
+	float: left;
+}
+#login_footer #footer_here {
+	color: #6699ff;
+}
+#login_footer #footer_href {
+	text-decoration: none;
+	color: inherit;
+}
+
+/* Validation error response */
+#login_username_error, #login_password_error {
+	font-size: 14px;
+	color: #FF0000;
+}
+
+/* Hidden fields */
+#match_status {
+	display: none;
+}

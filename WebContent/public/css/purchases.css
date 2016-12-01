@@ -1,0 +1,26 @@
+.add_product_form_elements {
+	margin-bottom: 18px;
+}
+.add_product_form_button {
+	height: 28px;
+	margin-top: 30px;
+	position: relative;
+	white-space: nowrap;
+	overflow: hidden;
+}
+/* Form text description: Full Name, Email, Password, etc */
+#add_product_body .add_product_form_elements .element_desc {
+	font-size: 20px;
+}
+.margin {
+	padding-left: 90px;
+	margin-bottom: 25px;
+	padding-right: 80px;
+}
+
+#user_sales, #purchases {
+	margin-top: 50px;
+
+	margin-left: 85px;
+	margin-right: 75px;
+}

@@ -1,0 +1,43 @@
+.add_product_form_elements {
+	margin-bottom: 18px;
+}
+.add_product_form_button {
+	height: 28px;
+	margin-top: 30px;
+	position: relative;
+	white-space: nowrap;
+	overflow: hidden;
+}
+/* Form text description: Full Name, Email, Password, etc */
+#add_product_body .add_product_form_elements .element_desc {
+	font-size: 20px;
+}
+#margin {
+	padding-left: 85px;
+	margin-bottom: 25px;
+	padding-right: 80px;
+}
+#product_name, #product_price, #product_pic {
+	width: 730px;
+	height: 25px;
+}
+#product_desc {
+	width: 730px;
+	height: 50px;
+}
+#product_submit {
+	/*display: text;*/
+	font-weight: bold;
+	font-family: Calibri;
+	font-size: 16px;
+	top: 0;
+	right: 0; 
+	bottom: 0;	
+	background-color: #6699cc; 
+	color: white;
+	position: absolute;
+}
+
+#your_products {
+	margin-top: 50px;
+}

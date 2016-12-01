@@ -1,0 +1,47 @@
+package web_services_soap.marketplace;
+
+import javax.jws.WebMethod;
+import javax.jws.WebService;
+import javax.jws.soap.SOAPBinding;
+import javax.jws.soap.SOAPBinding.Style;
+
+//Service Endpoint Interface
+@WebService
+@SOAPBinding(style = Style.RPC)
+public interface MarketPlaceInterface {
+
+	@WebMethod String searchCatalog(int userid_active_prm, String query_prm, String category_prm);
+		
+	@WebMethod String fetchConfPurchaseData(int id_prm, String uglob, String atglob, String etglob, String ieglob);
+	
+	@WebMethod int confPurchase(String uglob, String atglob, String etglob, String ieglob, 
+								String s0, String s1, String s2, String s3, String s4, String s5,
+								String s6, String s7, String s8, String s9, String s10);
+	
+	@WebMethod String purchases(String uglob, String atglob, String etglob, String ieglob);
+	
+	@WebMethod String yourproduct(String uglob, String atglob, String etglob, String ieglob);
+	
+	@WebMethod String sales(String uglob, String atglob, String etglob, String ieglob);
+	
+	@WebMethod int addproduct(String uglob, String atglob, String etglob, String ieglob,
+							String prod_name, String prod_desc, String prod_price,
+							String prod_pic);
+	
+	@WebMethod int deleteproduct(String uglob, String atglob, String etglob, String ieglob,
+							String product_id);
+		
+	@WebMethod String editproduct(String uglob, String atglob, String etglob, String ieglob,
+							String prod_id);
+	
+	@WebMethod int editproductfix(String uglob, String atglob, String etglob, String ieglob,
+								String prod_id, String prod_name, String prod_desc,
+								String prod_price, String prod_photo);
+	
+
+	@WebMethod String modifyLike(String uiglob, String uglob, String atglob, String etglob, 
+													int product_id,
+													String is_liked);
+			
+			
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<meta charset="UTF-8">
+	
+	<!-- 
+	<link rel="stylesheet" href="../public/css/chatbox.css" />
+	-->
+	
+	
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../public/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="../public/css/chat-style.css" />	
+	<link rel="stylesheet" href="../public/css/chat-theme.css" /> 
+	<link rel="stylesheet" href="../public/css/chat-style-c.css" />	
+	<link rel="stylesheet" href="../public/css/chatbox_irontec.css" />
+</head>
+<body ng-controller="Shell as vm">
+
+
+		
+		<!-- end of catalog list of products -->
+	
+		<!-- CHAT BOX AREA -->		
+				
+			<!--
+			<h1>{{ user_target }}</h1>
+			
+			<chat-directive user-target="{{ user_target }}"></chat-directive>
+			-->
+			
+			<!-- Import chat box template
+			<c:import url="../templates/chat_box_template_irontec.html">
+			
+			</c:import>
+			 -->
+			    <div class="chat-container">
+				    <chat-directive
+				            messages="vm.messages"
+				            username="vm.username"
+				            input-placeholder-text="You can write here"
+				            submit-button-text="Send your message"
+				            title="Chat Title"
+				            theme="material"
+				            submit-function="vm.sendMessage"
+				            visible="true">
+				    </chat-directive>
+				</div>
+			
+		<!-- END OF CHAT BOX AREA -->
+
+
+	<!-- BUILT IN JAVASCRIPT -->
+	
+	<!-- Firebase -->
+	<!-- commented for debugging purpose
+	<script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
+	-->
+	
+	<!-- FCM Token Manager -->
+	<!-- commented for debugging purpose
+	<script src="../public/js/fcm_token.js"></script>
+	-->
+	
+	
+	<!-- THIS LINE IS FOR DEBUGGING ONLY -->
+
+
+	<!-- END OF DEBUGGING LINE -->
+	
+	<!-- JS -->
+	<script src="../public/js/lodash.js"></script>
+	<script src="../public/js/jquery-1.11.1.min.js"></script>
+  	<script src="../public/js/angular.min.js"></script>
+	
+  	<script src="../public/modules/chat_module.js"></script>
+	<script src="../public/modules/chatTemplate.js"></script>
+	<script src="../app.js"></script>
+</body>
+</html>

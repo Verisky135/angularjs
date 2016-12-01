@@ -1,0 +1,71 @@
+.add_product_form_button {
+	height: 28px;
+	margin-top: 30px;
+	position: relative;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.add_product_form_elements {
+	margin-bottom: 18px;
+}
+/* Form text description: Full Name, Email, Password, etc */
+#add_product_body .add_product_form_elements .element_desc {
+	font-size: 14px;
+}
+#add_product_body {
+	padding-left: 90px;
+	margin-bottom: 25px;
+	padding-right: 80px;
+}
+
+/*Upload button style*/
+.upload_button input[type="file"] {
+    position: fixed;
+    top: -1000px;
+}
+.upload_button {
+    border: 1px solid #AAA;
+    border-radius: 4px;
+    padding: 2px 5px;
+    margin: 2px;
+    background: white;
+    display: inline-block;
+    /*Make text unselectable*/
+    -webkit-user-select: none; /* Chrome/Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+ */
+}
+.upload_button:hover {
+    background: #CCC;
+}
+.upload_button:active {
+    background: #CCF;
+}
+.upload_button :invalid + span {
+    color: black;
+}
+.upload_button :valid + span {
+    color: black;
+}
+#product_name, #product_price, #product_pic {
+	width: 730px;
+	height: 25px;
+}
+#product_desc {
+	resize: none;
+	font-size: 13px;
+	font-family: tahoma;
+	width: 730px;
+	height: 75px;
+}
+
+#add_product_name_error, #add_product_desc_error,
+#add_product_price_error {
+	font-size: 14px;
+	color: #FF0000;
+}
+
+/* hidden fields */
+#product_user_id, #product_user_username {
+	display: none;
+}
