@@ -178,11 +178,7 @@ function AddCatalogTable() {
 		if(isonline(username[idx])){
 			document.getElementById("catalogProduct" + idx).rows[0].cells[0].innerHTML = "online";
 			console.log(username[idx] + "sedang online");
-		}else{
-			document.getElementById("catalogProduct" + idx).rows[0].cells[0].innerHTML = "offline";
-			console.log(username[idx] + "sedang offline");
 		}
-		
 		
 		//document.getElementById("catalogProduct" + idx).rows[0].cells[0].innerHTML = "offline";
 		row.insertCell(1);

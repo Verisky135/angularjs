@@ -3,8 +3,8 @@ function logout() {
 	
 	// clear the localstorage and redirect to login page
 
-	/*
-	String uname = localStorage.getItem("username_global");
+	var uname = localStorage.getItem("username_global");
+	
 	
 	var xmlhttp;
 	
@@ -16,26 +16,16 @@ function logout() {
 		xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
 	}
 	
-	xmlhttp.onreadystatechange = function() {
-		if (xmlhttp.readyState != 4 && xmlhttp.status == 200) {
-			
-		
-		} else if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-			
-		} else {
-
-		}
-	}
+	    xmlhttp.open("GET", "marketplace?service=hapusonline" + "&user_active=" + uname, false);
+		xmlhttp.send();
 	
-	
-	xmlhttp.open("GET", "marketplace?service=hapusonline" + "&user_active=" + uname, false);
-	xmlhttp.send();
 
-	*/
+
+	// clear the localstorage 
 
 	localStorage.clear();
 	
 	// redirect to login page
 	window.location.href = "../index.jsp";
-	
+	console.log("Uname adalah : " + uname)
 }

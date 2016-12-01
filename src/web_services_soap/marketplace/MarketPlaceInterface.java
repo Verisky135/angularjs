@@ -69,6 +69,17 @@ public interface MarketPlaceInterface {
      * @return
      *     returns int
      */
+
+    @WebMethod
+    @WebResult(partName = "return")
+    @Action(input = "http://marketplace.web_services_soap/MarketPlaceInterface/hapusonlineRequest", output = "http://marketplace.web_services_soap/MarketPlaceInterface/hapusonlineResponse")
+    public String hapusonline(
+            @WebParam(name = "arg0", partName = "arg0")
+            String arg0);
+
+
+
+    
     @WebMethod
     @WebResult(partName = "return")
     @Action(input = "http://marketplace.web_services_soap/MarketPlaceInterface/confPurchaseRequest", output = "http://marketplace.web_services_soap/MarketPlaceInterface/confPurchaseResponse")

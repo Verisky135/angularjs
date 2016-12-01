@@ -21,6 +21,7 @@ import web_services_soap.functionalities.editProductFunc;
 import web_services_soap.functionalities.editProductFixFunc;
 import web_services_soap.functionalities.modifyLikeFunc;
 import web_services_soap.functionalities.daftaronlinefunc;
+import web_services_soap.functionalities.hapusonlinefunc;
 //import javax.net.ssl.HttpsURLConnection;
 
 //Service Implementation
@@ -110,10 +111,25 @@ public class MarketPlaceImplementation implements MarketPlaceInterface {
 		
 		String fetched_online;
 		
+		System.out.println("Sedang melalui Daftar Online di MPI");
+
 		daftaronlinefunc scf = new daftaronlinefunc();
 		fetched_online = scf.search();
 			
 		return fetched_online;
+	}
+
+	@Override
+	public String hapusonline(String uname) {
+		
+		String fetched_hapus;
+		
+		System.out.println("Sedang melalui Hapus Online di MPI");
+		hapusonlinefunc scf = new hapusonlinefunc(uname);
+		fetched_hapus = scf.hapus();
+		
+
+		return "Semangat" + fetched_hapus;
 	}
 
 	@Override

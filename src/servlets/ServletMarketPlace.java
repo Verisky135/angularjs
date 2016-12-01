@@ -46,7 +46,7 @@ public class ServletMarketPlace extends HttpServlet {
 			// print ke console
 			System.out.println("ObjCat:");
 			System.out.println("Sudah di komentar di ServerMarketPlace");
-			System.out.println(ObjCat);
+			//System.out.println(ObjCat);
 		
 			
 			// send to client
@@ -72,6 +72,17 @@ public class ServletMarketPlace extends HttpServlet {
 			out.flush();
 
 
+
+		}else if(service.equals("hapusonline")){
+
+
+			// panggil service
+			
+			String uname = request.getParameter("user_active");
+			String ObjCat = mpservice.hapusonline(uname);
+			// print ke console
+			System.out.println("Hapus Online akan dilakukan (dari SMP):");
+			System.out.println(ObjCat);
 
 		}
 	}
