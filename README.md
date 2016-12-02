@@ -126,34 +126,25 @@ Selain itu, silahkan cari "user agent parser", "how to get my IP from HTTPServle
 ![](img/angular.png)
 
 Chat box dibuat dengan menggunakan angularJS. Terdapat sebuah directive AngularJS yang mengatur chatbox. Pesan disimpan dalam bentuk stack. 
-1. Pengguna mengklik nama penjual yang sedang online 
-2. Kotak chat muncul (ng-show). 
-3. Pengguna mengirim pesan ke penjual. Pesan ditambahkan ke chat dan diteruskan ke chat service. 
-4. Chat service meneruskan pesan ke Firebase. 
-5. Firebase mengirimkan pesan ke tujuan (user/penjual). 
-6. Semua pesan yang sudah dikirim/diterima ditampilkan dengan ng-repeat. Front-end chat dibuat dengan beberapa framework seperti AngularJS, Bootstrap, JQuery.
+1. Pengguna mengklik nama penjual yang sedang online.  
+2. Kotak chat muncul (ng-show).  
+3. Pengguna mengirim pesan ke penjual. Pesan ditambahkan ke chat dan diteruskan ke chat service.  
+4. Chat service meneruskan pesan ke Firebase.  
+5. Firebase mengirimkan pesan ke tujuan (user/penjual).  
+6. Semua pesan yang sudah dikirim/diterima ditampilkan dengan ng-repeat.  
+Front-end chat dibuat dengan beberapa framework seperti AngularJS, Bootstrap, JQuery.
 
 ### Pembagian Tugas
 
-
-Tugas kali ini cukup rumit, karena melibatkan layanan dari pihak ketiga, dan framework. Bila tak mengerti, luangkan waktu belajar lebih banyak. Bila belum juga mengerti, belajarlah bersama-sama kelompokmu. Bila Anda sekelompok bingung, bertanyalah (bukan menyontek) ke teman seangkatanmu. Bila seangkatan bingung, bertanyalah pada asisten manapun.
-
-
-Harap semua anggota kelompok mengerjakan baik implementasi Firebase sebagai *cloud service* maupun *framework* AngularJS. Tuliskan pembagian tugas seperti berikut ini.
-
-
 Chat app frontend :
-1. Fungsionalitas A : 135140XX  
-2. Fungsionalitas B : 135140XX  
-
+1. Chatbox : 13514018, 13514100  
 
 Chat app backend :  
-1. Fungsionalitas C : 135140XX  
-2. Fungsionalitas D : 135140XX  
+1. Chat service & Firebase : 113514100  
+2. Tampilan user online : 13514050  
     
-Fitur security (IP, User-agent) :
-1. Fungsionalitas E : 135140XX
-2. Fungsionalitas F : 135140XX
+Fitur security (IP, User-agent) :  
+1. Security : 13514100  
 
 
 ## About
