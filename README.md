@@ -125,7 +125,7 @@ Selain itu, silahkan cari "user agent parser", "how to get my IP from HTTPServle
 
 ![](img/angular.png)
 
-Chat box dibuat dengan menggunakan angularJS. Terdapat sebuah directive AngularJS yang mengatur chatbox. Pesan disimpan dalam bentuk stack. 
+Chat box dibuat dengan menggunakan angularJS. Terdapat sebuah directive AngularJS yang mengatur chatbox. Pesan disimpan dalam bentuk stack.  
 1. Pengguna mengklik nama penjual yang sedang online.  
 2. Kotak chat muncul (ng-show).  
 3. Pengguna mengirim pesan ke penjual. Pesan ditambahkan ke chat dan diteruskan ke chat service.  
@@ -136,12 +136,13 @@ Front-end chat dibuat dengan beberapa framework seperti AngularJS, Bootstrap, JQ
 
 ### Pembagian Tugas
 
-Chat app frontend :
-1. Chatbox : 13514018, 13514100  
+Chat app frontend :  
+1. Chatbox : 13514018  
+2. Komunikasi chatbox & backend : 13514100  
 
 Chat app backend :  
 1. Chat service & Firebase : 113514100  
-2. Tampilan user online : 13514050  
+2. Tampilan user online/offline : 13514050  
     
 Fitur security (IP, User-agent) :  
 1. Security : 13514100  
