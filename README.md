@@ -121,10 +121,15 @@ Berikut adalah referensi yang dapat Anda baca terkait tugas ini:
 
 Selain itu, silahkan cari "user agent parser", "how to get my IP from HTTPServletRequest", dan "HTTP Headers field" untuk penjelasan lebih lanjut.
 
-
-### Prosedur Demo
-Sebelum demo, asisten akan melakukan checkout ke hash commit terakhir yang dilakukan sebelum deadline. Hal ini digunakan untuk memastikan kode yang akan didemokan adalah kode yang terakhir disubmit sebelum deadline.
-
+### Chat AngularJS
+Chat box dibuat dengan menggunakan angularJS. Terdapat sebuah directive AngularJS yang mengatur chatbox. Pesan disimpan dalam bentuk stack.
+1. Pengguna mengklik nama penjual yang sedang online
+2. Kotak chat muncul (ng-show).
+3. Pengguna mengirim pesan ke penjual. Pesan ditambahkan ke chat dan diteruskan ke chat service.
+4. Chat service meneruskan pesan ke Firebase.
+5. Firebase mengirimkan pesan ke tujuan (user/penjual).
+6. Semua pesan yang sudah dikirim/diterima ditampilkan dengan ng-repeat.
+Front-end chat dibuat dengan beberapa framework seperti AngularJS, Bootstrap, JQuery.
 
 ### Pembagian Tugas
 
